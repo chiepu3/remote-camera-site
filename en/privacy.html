@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Remote Camera Privacy Policy</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>.prose table{border-collapse:collapse;width:100%;margin:1em 0;display:block;overflow-x:auto}.prose td{min-width:7em}.prose th,.prose td{border:1px solid color-mix(in srgb,currentColor 25%,transparent);padding:.5em .6em;text-align:left;vertical-align:top}</style>
+</head>
+<body>
+  <header class="site-header shell">
+    <span class="brand">Remote Camera</span>
+    <nav class="languages"><span aria-current="true">English</span><a href="../privacy.html">日本語</a></nav>
+  </header>
+  <main id="main" class="shell">
+    <article class="document">
+      <header class="page-heading"><h1>Remote Camera Privacy Policy</h1></header>
+      <div class="prose">
+<p>Effective date: November 8, 2026</p>
+<p>This policy explains how the developer of Remote Camera ("the app", "we") handles information.</p>
+<h2>1. Summary</h2>
+<p>Remote Camera connects two phones (or a phone and a web browser) directly, so that one device can see and operate the camera app of the other.
+<strong>We do not collect your personal information, video, photos, or screen content</strong> (apart from purchase records handled through Google Play; see section 5). The app has no developer-operated server and contains no advertising or analytics.</p>
+<h2>2. Information processed only on your device</h2>
+<table>
+<thead>
+<tr>
+<th>Information</th>
+<th>Purpose</th>
+<th>Sent off the device</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>On-screen elements (button labels and positions) and the name of the app in the foreground, read through the AccessibilityService API</td>
+<td>Locating the camera app's shutter button, checking that the camera app is open, and performing the taps, pinches and shutter presses you make on the viewer</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Screen images taken through the AccessibilityService API (only when "Palm shutter" is turned on)</td>
+<td>Detecting an open palm with an on-device machine-learning model. Images are not stored</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Camera images (only when scanning a pairing QR code)</td>
+<td>Reading the QR code</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Diagnostic logs and crash records</td>
+<td>Troubleshooting</td>
+<td>Only if you tap "Share log" and choose where to send it</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Information sent to your paired device</h2>
+<p>Only after you pair two devices and allow screen sharing, the app sends the following <strong>directly to the paired device</strong>. It never passes through our servers or any third-party server.</p>
+<ul>
+<li>Video of the host (camera-side) screen, while screen sharing is allowed</li>
+<li>Photos taken during the session (new photos saved in the host's camera folder)</li>
+<li>Your control input (taps, pinches, shutter presses), from the viewer to the host</li>
+</ul>
+<p>Data travels over Bluetooth Low Energy (connection setup) and Wi-Fi Direct or a local-only hotspot created by the phone (video and photos), not over the internet.
+Connections are authenticated with a key exchanged during pairing; unpaired devices cannot connect.
+Photos received on the viewer are saved in the "Pictures/SyncCamera" folder of that device.</p>
+<h2>4. Permissions</h2>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accessibility service</td>
+<td>As described in section 2. Used only after you agree to the in-app disclosure and turn it on in Settings</td>
+</tr>
+<tr>
+<td>Screen capture (MediaProjection)</td>
+<td>Sending the host's screen to the viewer</td>
+</tr>
+<tr>
+<td>Nearby devices (Bluetooth, Wi-Fi)</td>
+<td>Finding and connecting to your paired device. Not used to determine location</td>
+</tr>
+<tr>
+<td>Photos and videos</td>
+<td>Sending photos taken during the session to the viewer</td>
+</tr>
+<tr>
+<td>Camera</td>
+<td>Scanning the pairing QR code</td>
+</tr>
+<tr>
+<td>Notifications</td>
+<td>Showing that a session is active</td>
+</tr>
+</tbody>
+</table>
+<h2>5. Purchases</h2>
+<p>In-app purchases are processed by Google Play Billing. Google handles your payment details (such as card numbers); we do not receive them. From Google Play we receive only order records (order number, item, price, date and country).
+The app stores whether you have purchased and when your free trial started on your device, and includes this in Android Auto Backup (your Google account backup) so it survives reinstalling.
+See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> for how Google handles this information.</p>
+<h2>6. Sharing with third parties</h2>
+<p>We do not share your information with third parties.</p>
+<h2>7. Children</h2>
+<p>The app is not directed at children under 13.</p>
+<h2>8. Deleting data</h2>
+<p>You can delete everything the app stores on your device from Settings &gt; Apps &gt; Remote Camera &gt; Storage &gt; Clear data, or by uninstalling the app. Photos saved on the viewer can be deleted like any other photo.</p>
+<h2>9. Changes</h2>
+<p>We will post any changes to this policy on this page, and announce significant changes in the app.</p>
+<h2>10. Contact</h2>
+<p>Developer: ep3.works<br>
+Email: the email address shown on the Google Play store listing</p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
